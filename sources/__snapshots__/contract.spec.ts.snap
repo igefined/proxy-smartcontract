@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contract forward message 1`] = `
+[
+  {
+    "$seq": 0,
+    "events": [
+      {
+        "$type": "deploy",
+      },
+      {
+        "$type": "received",
+        "message": {
+          "body": {
+            "cell": "x{8DA0F2C780083BDB46227A42A96323F29EA02287D2DC51FEE3B85A52EEE5534F7FB0671BCED_}
+ x{48656C6C6F}",
+            "type": "cell",
+          },
+          "bounce": true,
+          "from": "@treasure(user_1)",
+          "to": "kQA0fDcbiVa0MaEU9ZccI628l7hjZ6kCP-VcZB3Dp0BmlOrT",
+          "type": "internal",
+          "value": "0.1",
+        },
+      },
+      {
+        "$type": "processed",
+        "gasUsed": 13051n,
+      },
+      {
+        "$type": "sent",
+        "messages": [
+          {
+            "body": {
+              "text": "Hello",
+              "type": "text",
+            },
+            "bounce": true,
+            "from": "kQA0fDcbiVa0MaEU9ZccI628l7hjZ6kCP-VcZB3Dp0BmlOrT",
+            "to": "@treasure(user_2)",
+            "type": "internal",
+            "value": "0.085777",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    "$seq": 1,
+    "events": [
+      {
+        "$type": "received-bounced",
+        "message": {
+          "body": {
+            "cell": "x{FFFFFFFF0000000048656C6C6F}",
+            "type": "cell",
+          },
+          "bounce": false,
+          "from": "@treasure(user_2)",
+          "to": "kQA0fDcbiVa0MaEU9ZccI628l7hjZ6kCP-VcZB3Dp0BmlOrT",
+          "type": "internal",
+          "value": "0.084777",
+        },
+      },
+      {
+        "$type": "processed",
+        "gasUsed": 8088n,
+      },
+    ],
+  },
+]
+`;
